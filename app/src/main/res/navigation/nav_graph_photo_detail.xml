@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_photo_detail"
+    app:startDestination="@id/photoDetailFragment">
+
+    <fragment
+        android:id="@+id/photoDetailFragment"
+        android:name="com.dizcoding.miniproject.presentation.photodetail.PhotoDetailFragment"
+        android:label="PhotoDetailFragment">
+        <deepLink app:uri="android-app://com.dizcoding.miniproject/photo_detail/{title}/{link}" />
+        <argument
+            android:name="title"
+            app:argType="string" />
+        <argument
+            android:name="link"
+            app:argType="string" />
+    </fragment>
+</navigation>

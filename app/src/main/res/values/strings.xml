@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Junior Android Test</string>
+
+    <string name="format_item_post_name_and_company_name">By : %1$s ( %2$s )</string>
+    <string name="text_comments">Comments</string>
+    <string name="text_company">Company :</string>
+    <string name="text_address">Address :</string>
+    <string name="text_title_page_post">Post</string>
+    <string name="text_title_page_post_detail">Post Detail</string>
+    <string name="text_title_page_user_detail">User Detail</string>
+    <string name="text_title_page_photo_detail">Photo Detail</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_user_detail"
+    app:startDestination="@id/userDetailFragment">
+
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.dizcoding.miniproject.presentation.userdetail.UserDetailFragment"
+        android:label="UserDetailFragment" >
+        <deepLink app:uri="android-app://com.dizcoding.miniproject/user_detail/{userId}" />
+        <argument
+            android:name="userId"
+            app:argType="integer" />
+    </fragment>
+</navigation>

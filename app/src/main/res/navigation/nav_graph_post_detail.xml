@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph_post_detail"
+    app:startDestination="@id/postDetailFragment">
+
+    <fragment
+        android:id="@+id/postDetailFragment"
+        android:name="com.dizcoding.miniproject.presentation.postdetail.PostDetailFragment"
+        android:label="PostDetailFragment">
+
+        <deepLink app:uri="android-app://com.dizcoding.miniproject/post_detail/{postId}" />
+        <argument
+            android:name="postId"
+            app:argType="integer" />
+
+    </fragment>
+</navigation>
